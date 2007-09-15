@@ -1,7 +1,7 @@
 %define	module	Config-YAML
 %define	name	perl-%{module}
 %define version 1.42
-%define	release	%mkrel 3
+%define	release	%mkrel 4
 
 Name:		%{name}
 Version:	%{version}
