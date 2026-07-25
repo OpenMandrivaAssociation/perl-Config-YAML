@@ -2,13 +2,13 @@
 %define upstream_version 1.42
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Generic Config perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
+URL:		https://metacpan.org/dist/Config-YAML
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MD/MDXI/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	make
