@@ -1,15 +1,13 @@
 %define	upstream_name	 Config-YAML
-%define upstream_version 1.42
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.42
+Release:	7
 
 Summary:	Generic Config perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Config-YAML
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MD/MDXI/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MD/MDXI/%{upstream_name}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ method getall returns a hash which contains all options and it's
 associated values of your config file.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -48,9 +46,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.420.0-1mdv2011.0
 + Revision: 403026
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.42-6mdv2009.0
+- rebuild using %1.42 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.42-6mdv2009.0
 + Revision: 241191
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
